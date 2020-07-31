@@ -1,0 +1,2 @@
+# SpringBootMavenStandard
+基于maven创建的springBoot基础版本
