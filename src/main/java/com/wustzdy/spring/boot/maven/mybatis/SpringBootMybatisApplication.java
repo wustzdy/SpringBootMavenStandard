@@ -1,11 +1,11 @@
-package com.wustzdy.spring.boot.maven.standard.controller;
+package com.wustzdy.spring.boot.maven.mybatis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootMavenStandardApplication {
+public class SpringBootMybatisApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootMavenStandardApplication.class, args);
+        SpringApplication.run(SpringBootMybatisApplication.class, args);
     }
 }

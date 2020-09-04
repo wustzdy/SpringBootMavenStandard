@@ -1,6 +1,6 @@
-package com.wustzdy.spring.boot.maven.standard.controller.controller;
+package com.wustzdy.spring.boot.maven.mybatis.controller;
 
-import com.wustzdy.spring.boot.maven.standard.controller.service.HelloService;
+import com.wustzdy.spring.boot.maven.mybatis.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

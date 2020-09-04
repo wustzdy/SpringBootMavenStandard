@@ -1,6 +1,6 @@
-package com.wustzdy.spring.boot.maven.standard.controller.service.impl;
+package com.wustzdy.spring.boot.maven.mybatis.service.impl;
 
-import com.wustzdy.spring.boot.maven.standard.controller.service.HelloService;
+import com.wustzdy.spring.boot.maven.mybatis.service.HelloService;
 import org.springframework.stereotype.Service;
 
 @Service
