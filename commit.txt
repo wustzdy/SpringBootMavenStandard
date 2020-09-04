@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+将删除 .idea/
+将删除 target/generated-sources/
+将删除 target/classes/
+*/target/
+
+GIT提交的时候，忽略某些文件 比如*iml文件
+
+第一步：点击 setting
+第二步：点击Editor下的File Types
+第三步：编辑，在后面添加 .iml;.idea;.gitignore;.sh;.classpath;.project;*.settings;target;logs;
+
+
+*.hprof;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;vssver.scc;vssver2.scc;.iml;.idea;.gitignore;.sh;.classpath;.project;*.settings;target;logs;

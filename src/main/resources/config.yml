@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    dynamic:
+      datasource:
+        iam:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/zdyMyTest
+          username: root
+          password: 123456
+mysql:
+  iam:
+    liquibaseDataSource:
+      driver: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/zdyMyTest?createDatabaseIfNotExist=true
+      username: root
+      password: 123456
+      maxPoolSize: 2
+      connectionTimeOut: 10000
+      maxLifeTime: 600000
