@@ -1,29 +1,29 @@
-package com.wustzdy.spring.boot.maven.standard.controller.controller;
+package com.wustzdy.spring.boot.maven.standard;
 
-import com.wustzdy.spring.boot.maven.standard.controller.service.HelloService;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.sql.DataSource;
 import java.util.List;
 
-@RestController
-public class HelloController {
-    @Autowired
-    private HelloService helloService;
-
+@SuppressWarnings("all")
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class DataSourceTest {
     @Autowired
     DataSourceProperties dataSourceProperties;
 
     @Autowired
     ApplicationContext applicationContext;
 
-    @RequestMapping("/test")
-    public String getTest() {
+    @Test
+    public void contextLoads() {
         // 获取配置的数据源
         DataSource dataSource = applicationContext.getBean(DataSource.class);
         // 查看配置数据源信息
@@ -33,6 +33,6 @@ public class HelloController {
         //执行SQL,输出查到的数据
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
         List<?> resultList = jdbcTemplate.queryForList("select * from iam_users");
-        return helloService.getTest();
+//        System.out.println("===>>>>>>>>>>>" + JSON.toJSONString(resultList));
     }
 }
